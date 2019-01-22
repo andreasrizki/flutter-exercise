@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_kudo_clone/variables.dart' as variable;
 
 class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
@@ -7,9 +8,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final GlobalKey<ScaffoldState> _keyDrawer = GlobalKey<ScaffoldState>();
-  final Color colorPrimary = Color(0xFF0088D9);
-
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +16,7 @@ class _HomeState extends State<Home> {
       drawer: Drawer(),
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: colorPrimary,
+        backgroundColor: variable.colorPrimaryBlue,
         leading: IconButton(
           onPressed: () => _keyDrawer.currentState.openDrawer(),
           icon: Icon(Icons.person),
@@ -44,7 +43,7 @@ class _HomeState extends State<Home> {
 
             Container(
               padding: EdgeInsets.all(16.0),
-              color: colorPrimary,
+              color: variable.colorPrimaryBlue,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -56,7 +55,7 @@ class _HomeState extends State<Home> {
 
             Container(
               padding: EdgeInsets.only(top: 20.0, left: 8.0, right: 8.0, bottom: 16.0),
-              color: colorPrimary,
+              color: variable.colorPrimaryBlue,
               child: GridView.count(
                 physics: NeverScrollableScrollPhysics(),
                 crossAxisCount: 4,
@@ -217,7 +216,7 @@ class BtnIcon extends StatelessWidget {
             padding: EdgeInsets.all(10.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(30.0)),
-              color: Color(0xFF007EC6)
+              color: variable.colorPrimaryBlueDark
             ),
             child: Icon(this.icon, color: this.color),
           ) : Container(
@@ -228,14 +227,18 @@ class BtnIcon extends StatelessWidget {
             padding: EdgeInsets.only(top: 10.0),
             child: Text(
               this.text, 
-              style: TextStyle(fontSize: 16.0, color: this.color, fontWeight: this.fontWeight),
+              style: TextStyle(
+                fontSize: 16.0,
+                color: this.color,
+                fontWeight: this.fontWeight
+              ),
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
               maxLines: 2,
             ),
           ),
           SizedBox(
-            height: 0.0,
+            height: 1.0,
           ),
         ],
       )
@@ -269,11 +272,15 @@ class BoxCard extends StatelessWidget {
               child: Text(this.subtitle, style: TextStyle(fontSize: 16.0), textAlign: TextAlign.left),
             ),
           ),
-          GridView.count(
-            physics: NeverScrollableScrollPhysics(),
-            crossAxisCount: 4,
-            shrinkWrap: true,
-            children: this.btnIcons,
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: GridView.count(
+              physics: NeverScrollableScrollPhysics(),
+              crossAxisCount: 4,
+              shrinkWrap: true,
+              padding: EdgeInsets.all(10.0),
+              children: this.btnIcons,
+            ),
           )
         ],
       ),
