@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_kudo_clone/variables.dart' as variable;
@@ -62,9 +63,33 @@ class _HomeState extends State<Home> {
                 shrinkWrap: true,
                 children: <Widget>[
                   
-                  BtnIcon(icon: Icons.image, bgRound: true, onPressed: (){}, color: Colors.white, fontWeight: FontWeight.bold, text: "Rekam Transaksi"),
-                  BtnIcon(icon: Icons.image, bgRound: true, onPressed: (){}, color: Colors.white, fontWeight: FontWeight.bold, text: "Rekam Komisi"),
-                  BtnIcon(icon: Icons.image, bgRound: true, onPressed: (){}, color: Colors.white, fontWeight: FontWeight.bold, text: "Tambah Saldo")
+                  BtnIcon(
+                    icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 14.0,
+                    bgRound: true,
+                    onPressed: (){},
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    text: "Rekam Transaksi"
+                  ),
+                  BtnIcon(
+                    icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 14.0,
+                    bgRound: true,
+                    onPressed: (){},
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    text: "Rekam Komisi"
+                  ),
+                  BtnIcon(
+                    icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 14.0,
+                    bgRound: true,
+                    onPressed: (){},
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    text: "Tambah Saldo"
+                  )
 
                 ],
               )
@@ -149,13 +174,41 @@ class _HomeState extends State<Home> {
                 title: "Bayar Tagihan",
                 subtitle: "Tagihan apa aja, semua ada!",
                 btnIcons: <Widget>[
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "PLN Pascabayar"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "PDAM"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Telepon Rumah"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Telkomsel Halo"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Asuransi"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "BPJS"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Multifinance")
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "PLN Pascabayar"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "PDAM"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Telepon Rumah"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Telkomsel Halo"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Asuransi"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "BPJS"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Multifinance")
                 ],
               )
             ),
@@ -166,8 +219,16 @@ class _HomeState extends State<Home> {
                 title: "Isi Ulang",
                 subtitle: "Harga murah, keuntungan melimpah!",
                 btnIcons: <Widget>[
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Pulsa dan Paket Data"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Token PLN"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Pulsa dan Paket Data"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Token PLN"),
                 ],
               ),
             ),
@@ -178,12 +239,36 @@ class _HomeState extends State<Home> {
                 title: "Produk Online",
                 subtitle: "Cari produk apa aja di Kudo",
                 btnIcons: <Widget>[
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Barang Elektronik"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Kartu Perdana dan Kartu E.."),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Supermarket"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Rumah Tangga"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Sehat Cantik"),
-                  BtnIcon(icon: Icons.image, onPressed: (){}, fontWeight: FontWeight.normal, text: "Voucher Game"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Barang Elektronik"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Kartu Perdana dan Kartu E.."),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Supermarket"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Rumah Tangga"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Sehat Cantik"),
+                  BtnIcon(icon: Icons.image,
+                    fontSize: defaultTargetPlatform == TargetPlatform.android ? 16.0 : 13.0,
+                    onPressed: (){},
+                    fontWeight: FontWeight.normal,
+                    text: "Voucher Game"),
                 ],
               ),
             ),
@@ -201,46 +286,46 @@ class BtnIcon extends StatelessWidget {
   Color color;
   FontWeight fontWeight;
   bool bgRound = false;
+  double fontSize;
   final VoidCallback onPressed; 
 
-  BtnIcon({@required this.icon,@required this.text, this.color, this.fontWeight, this.onPressed, this.bgRound = false});
+  BtnIcon({@required this.icon,@required this.text, this.color, this.fontWeight, this.onPressed, this.bgRound = false, this.fontSize});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: this.onPressed,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          bgRound ? Container(
-            padding: EdgeInsets.all(10.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(30.0)),
-              color: variable.colorPrimaryBlueDark
-            ),
-            child: Icon(this.icon, color: this.color),
-          ) : Container(
-            padding: EdgeInsets.all(10.0),
-            child: Icon(this.icon, color: this.color),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 10.0),
-            child: Text(
-              this.text, 
-              style: TextStyle(
-                fontSize: 16.0,
-                color: this.color,
-                fontWeight: this.fontWeight
+      child: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            bgRound ? Container(
+              padding: EdgeInsets.all(10.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                color: variable.colorPrimaryBlueDark
               ),
-              textAlign: TextAlign.center,
-              overflow: TextOverflow.ellipsis,
-              maxLines: 2,
+              child: Icon(this.icon, color: this.color),
+            ) : Container(
+              padding: EdgeInsets.all(10.0),
+              child: Icon(this.icon, color: this.color),
             ),
-          ),
-          SizedBox(
-            height: 1.0,
-          ),
-        ],
+            Padding(
+              padding: EdgeInsets.only(top: 10.0),
+              child: Text(
+                this.text, 
+                style: TextStyle(
+                  fontSize: this.fontSize,
+                  color: this.color,
+                  fontWeight: this.fontWeight
+                ),
+                textAlign: TextAlign.center,
+                overflow: TextOverflow.ellipsis,
+                maxLines: 2,
+              ),
+            )
+          ],
+        ),
       )
     );
   }
@@ -268,16 +353,16 @@ class BoxCard extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
-              margin: EdgeInsets.only(bottom: 16.0, left: 16.0),
+              margin: EdgeInsets.only(left: 16.0),
               child: Text(this.subtitle, style: TextStyle(fontSize: 16.0), textAlign: TextAlign.left),
             ),
           ),
           Container(
-            padding: EdgeInsets.all(8.0),
             child: GridView.count(
               physics: NeverScrollableScrollPhysics(),
               crossAxisCount: 4,
               shrinkWrap: true,
+              mainAxisSpacing: 20.0,
               padding: EdgeInsets.all(10.0),
               children: this.btnIcons,
             ),
