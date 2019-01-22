@@ -1,4 +1,4 @@
-# flutter_kudo_clone
+# Project Flutter - Kudo App Clone
 
 A new Flutter project.
 
