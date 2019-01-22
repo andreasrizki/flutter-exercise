@@ -324,6 +324,7 @@ class BtnIcon extends StatelessWidget {
                 maxLines: 2,
               ),
             )
+
           ],
         ),
       )
@@ -341,7 +342,7 @@ class BoxCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start, 
+        mainAxisAlignment: MainAxisAlignment.spaceAround, 
         children: <Widget>[
           Align(
             alignment: Alignment.centerLeft,
@@ -365,7 +366,11 @@ class BoxCard extends StatelessWidget {
               mainAxisSpacing: 20.0,
               padding: EdgeInsets.all(10.0),
               children: this.btnIcons,
+              childAspectRatio: 0.9,
             ),
+          ),
+          SizedBox(
+            height: 0.0,
           )
         ],
       ),
