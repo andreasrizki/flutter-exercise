@@ -156,35 +156,35 @@ class _HomeState extends State<Home> {
                     padding: EdgeInsets.only(left: 16.0, right: 16.0),
                     child: FadeInImage.assetNetwork(
                       placeholder: "images/loading.gif",
-                      image: "https://kudo.co.id/blog/wp-content/uploads/2018/12/CALM-CR-Nov-Bonus-Akhir-Tahun-Komisi-100rb-Inbox-Blog-533x300.png",
+                      image: "https://static.kudo.co.id/uploads/promobox/thumbnail/promobox-389-1545997164.png",
                     )
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 16.0, right: 16.0),
                     child: FadeInImage.assetNetwork(
                       placeholder: "images/loading.gif",
-                      image: "https://kudo.co.id/blog/wp-content/uploads/2018/12/CALM-CR-Nov-Bonus-Akhir-Tahun-Komisi-100rb-Inbox-Blog-533x300.png",
+                      image: "https://static.kudo.co.id/uploads/promobox/thumbnail/promobox-389-1545997164.png",
                     )
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 16.0, right: 16.0),
                     child: FadeInImage.assetNetwork(
                       placeholder: "images/loading.gif",
-                      image: "https://kudo.co.id/blog/wp-content/uploads/2018/12/CALM-CR-Nov-Bonus-Akhir-Tahun-Komisi-100rb-Inbox-Blog-533x300.png",
+                      image: "https://static.kudo.co.id/uploads/promobox/thumbnail/promobox-389-1545997164.png",
                     )
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 16.0, right: 16.0),
                     child: FadeInImage.assetNetwork(
                       placeholder: "images/loading.gif",
-                      image: "https://kudo.co.id/blog/wp-content/uploads/2018/12/CALM-CR-Nov-Bonus-Akhir-Tahun-Komisi-100rb-Inbox-Blog-533x300.png",
+                      image: "https://static.kudo.co.id/uploads/promobox/thumbnail/promobox-389-1545997164.png",
                     )
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 16.0, right: 16.0),
                     child: FadeInImage.assetNetwork(
                       placeholder: "images/loading.gif",
-                      image: "https://kudo.co.id/blog/wp-content/uploads/2018/12/CALM-CR-Nov-Bonus-Akhir-Tahun-Komisi-100rb-Inbox-Blog-533x300.png",
+                      image: "https://static.kudo.co.id/uploads/promobox/thumbnail/promobox-389-1545997164.png",
                     )
                   ),
                 ],
