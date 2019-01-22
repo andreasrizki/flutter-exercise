@@ -38,6 +38,30 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
+      bottomNavigationBar: Theme(
+        data: Theme.of(context).copyWith(
+          canvasColor: variable.colorPrimaryBlue,
+        ),
+        child: BottomNavigationBar(
+          currentIndex: 0,
+          type: BottomNavigationBarType.fixed,
+          fixedColor: Colors.white,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home, color: Color(0xFF009df2)),
+              title: Text("KIOS", style: TextStyle(color: Color(0xFF009df2)))
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.email, color: Color(0xFF009df2)),
+              title: Text("NOTIFIKASI", style: TextStyle(color: Color(0xFF009df2)))
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_balance_wallet, color: Color(0xFF009df2)),
+              title: Text("DOMPET", style: TextStyle(color: Color(0xFF009df2)))
+            )
+          ],
+        ),
+      ),
       body: Container(
         child: ListView(
           children: <Widget>[
